@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue</item> <!-- Основной цвет (например, синий) -->
+        <item name="colorPrimaryDark">@color/dark_blue</item> <!-- Темный оттенок -->
+        <item name="colorAccent">@color/orange</item> <!-- Акцентный (яркий) цвет -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

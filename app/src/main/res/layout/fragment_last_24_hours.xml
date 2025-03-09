@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Блок с последним измерением (около 25% высоты экрана) -->
+    <LinearLayout
+        android:id="@+id/latestMeasurementBlock"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#E8F5E9"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Заголовок в две строки в левом верхнем углу -->
+            <TextView
+                android:id="@+id/measurementHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your latest&#10;glucose measurement"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <!-- Дата и время справа в верхнем углу -->
+            <TextView
+                android:id="@+id/latestMeasurementTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--:--"
+                android:textSize="12sp"
+                android:textColor="#777777"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+
+        <!-- Центр блока: значение измерения и единицы -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/latestMeasurementValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--.-"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#1B5E20" />
+
+            <TextView
+                android:id="@+id/measurementUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" mmol/l"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:layout_marginStart="6dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- График за последние 24 часа -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/glucoseChart"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

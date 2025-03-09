@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"> >
+
+    <item
+        android:id="@+id/nav_report"
+        android:title="Form a Report"
+        android:icon="@drawable/pdfc" />
+    <item
+        android:id="@+id/calculator"
+        android:title="Glycemia Risk Index calculator"
+        android:icon="@drawable/calculate" />
+    <item
+        android:id="@+id/menu_chat"
+        android:title="ChatBot"
+        android:icon="@drawable/ic_chat"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/nav_analyze_file"
+        android:title="Analyze file"
+        android:icon="@drawable/analyze"/>
+</menu>

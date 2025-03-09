@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DIA guard</string>
+    <string name="text_bottom">Create an account or log in</string>
+    <string name="app_name_after">Smart Monitoring, Better Diabetes Care</string>
+    <string name="btnSignIn">Log In</string>
+    <string name="btnRegister">Register</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+</resources>
